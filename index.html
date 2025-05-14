@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kelurahan Perum Maesa UNIMA</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-image: url('batik-mahesa-maron.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: repeat;
+      color: #333;
+      position: relative;
+    }
+
+    /* Overlay untuk latar agar teks terbaca */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(255,255,255,0.85);
+      z-index: -1;
+    }
+
+    header {
+      background-color: #b71c1c;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #212121;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 0.75rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #424242;
+    }
+
+    main {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      color: #6D4C41;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 0.5rem;
+      margin-top: 0;
+    }
+
+    footer {
+      background-color: #33691e;
+      color: white;
+      text-align: center;
+      padding: 1.5rem;
+    }
+
+    iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    form input,
+    form textarea,
+    form button {
+      display: block;
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 0.75rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    form button {
+      background-color: #b71c1c;
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    form button:hover {
+      background-color: #d32f2f;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Kelurahan Perum Maesa UNIMA</h1>
+  <p>Profil, Potensi, dan Layanan Masyarakat</p>
+</header>
+
+<nav>
+  <a href="#profil">Profil</a>
+  <a href="#pemerintahan">Pemerintahan</a>
+  <a href="#sejarah">Sejarah</a>
+  <a href="#budaya">Budaya</a>
+  <a href="#potensi">Potensi</a>
+  <a href="#galeri">Galeri</a>
+  <a href="#berita">Berita</a>
+  <a href="#layanan">Layanan</a>
+  <a href="#kontak">Kontak</a>
+</nav>
+
+<main>
+  <section id="profil" class="card">
+    <h2>1. Profil Umum</h2>
+    <p><strong>Nama Kelurahan:</strong> Perum Maesa UNIMA</p>
+    <p><strong>Alamat:</strong> Jl. Pendidikan No.1, Tondano, Minahasa, Sulawesi Utara</p>
+    <p><strong>Kode Pos:</strong> 95618</p>
+    <p><strong>Luas Wilayah:</strong> 4 km²</p>
+    <p><strong>Jumlah Penduduk:</strong> 1.234 Jiwa</p>
+    <p><strong>Struktur Wilayah:</strong> 2 Lingkungan, 5 RW, 10 RT</p>
+    <iframe src="https://maps.google.com/maps?q=universitas%20negeri%20manado&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+  </section>
+
+  <section id="pemerintahan" class="card">
+    <h2>2. Pemerintahan</h2>
+    <p><strong>Lurah:</strong> Bapak Andi Maesa</p>
+    <ul>
+      <li>Sekretaris Kelurahan - Ibu Sinta</li>
+      <li>Bendahara - Bapak Yusuf</li>
+      <li>Staf Pemerintahan - Ibu Rina</li>
+    </ul>
+    <p><strong>Struktur Organisasi:</strong></p>
+    <img src="struktur-organisasi.jpg" alt="Struktur Organisasi" width="100%">
+  </section>
+
+  <section id="sejarah" class="card">
+    <h2>3. Sejarah</h2>
+    <p><strong>Asal-usul Nama:</strong> “Maesa” berarti kebersamaan dan persatuan.</p>
+    <p><strong>Tanggal Berdiri:</strong> 12 Maret 1995</p>
+    <p><strong>Tokoh Sejarah:</strong> Alm. Bapak Thomas Mendur</p>
+  </section>
+
+  <section id="budaya" class="card">
+    <h2>4. Budaya dan Adat</h2>
+    <p><strong>Tradisi Unik:</strong> Festival Maesa Tahunan</p>
+    <p><strong>Upacara Adat:</strong> Tulude, Mapalus</p>
+    <p><strong>Seni & Kerajinan:</strong> Anyaman bambu dan kain tenun</p>
+    <p><strong>Bahasa Lokal:</strong> Manado & Tombulu</p>
+  </section>
+
+  <section id="potensi" class="card">
+    <h2>5. Potensi</h2>
+    <p><strong>Wisata:</strong> Bukit Maesa, Danau Tondano</p>
+    <p><strong>Ekonomi:</strong> Pertanian (jagung), UMKM kue kelapa</p>
+    <p><strong>Sumber Daya Alam:</strong> Air bersih & tanah subur</p>
+    <p><strong>Produk Unggulan:</strong> Sirup pala, keripik pisang</p>
+  </section>
+
+  <section id="galeri" class="card">
+    <h2>6. Galeri</h2>
+    <div class="gallery">
+      <img src="foto1.jpg" alt="Kegiatan 1">
+      <img src="foto2.jpg" alt="Kegiatan 2">
+      <img src="foto3.jpg" alt="Kegiatan 3">
+    </div>
+  </section>
+
+  <section id="berita" class="card">
+    <h2>7. Berita</h2>
+    <ul>
+      <li>[01/05/2025] Kerja bakti lingkungan RT 3 minggu depan</li>
+      <li>[27/04/2025] Pengumuman pemilihan ketua RT</li>
+    </ul>
+  </section>
+
+  <section id="layanan" class="card">
+    <h2>8. Layanan</h2>
+    <form>
+      <input type="text" name="nama" placeholder="Nama">
+      <textarea name="keperluan" placeholder="Keperluan"></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+    <p><strong>Jadwal Pelayanan:</strong> Senin - Jumat, 08:00 - 14:00</p>
+  </section>
+
+  <section id="kontak" class="card">
+    <h2>9. Kontak</h2>
+    <p><strong>Telepon:</strong> 0431-123456</p>
+    <p><strong>Email:</strong> perummaesa@kelurahan.go.id</p>
+    <p><strong>Facebook:</strong> <a href="#">fb.com/perummaesa</a></p>
+    <p><strong>Instagram:</strong> <a href="#">@perummaesa</a></p>
+    <form>
+      <input type="text" placeholder="Nama">
+      <textarea placeholder="Pesan"></textarea>
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 Kelurahan Perum Maesa UNIMA. All rights reserved.
+</footer>
+
+</body>
+</html>
